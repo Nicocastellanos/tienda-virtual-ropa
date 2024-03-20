@@ -3,3 +3,22 @@
     height: 100%;
     object-fit: cover;
 }
+.buttons{
+    position: relative;
+    z-index: 1;
+    margin: -250px 0 300px 210px;
+}
+.button-man, .button-woman{
+    margin-left: 90px;
+    text-decoration: none;
+}
+.button-man{
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+}
+.button-woman{
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+}
