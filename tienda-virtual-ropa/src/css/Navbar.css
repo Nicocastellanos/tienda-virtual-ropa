@@ -21,7 +21,10 @@
     margin-top: 10px;
 }
 .link-carrito{
-    margin-left: 80px;
+    margin: 10px 0  0 80px ;
+}
+.car{
+    width: 23px;
 }
 .oddy{
     margin-left: 40px;
