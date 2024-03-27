@@ -3,7 +3,7 @@ import ImgP from '../assets/images/imagen-p.png'
 import { Link } from 'react-router-dom'
 import ImageSlider from '../components/ImageSlider';
 import '../css/Home.css'
-import Footer from '../components/Footer';
+
 
 export default function Home() {
 
