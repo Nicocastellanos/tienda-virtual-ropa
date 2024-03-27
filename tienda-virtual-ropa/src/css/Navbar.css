@@ -1,0 +1,34 @@
+.nav{
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+}
+.links{
+    margin-right: 90px;
+    text-decoration: none;
+    color: #2e2e2e;
+    border-bottom: 0px solid;
+    transition: all 0.3s ease;
+}
+.links:hover{
+    border-bottom: 1px #2e2e2e solid;
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.links-ropa{
+    margin-right: 80px;
+}
+.link-carrito{
+    margin: 12px 0  0 80px ;
+}
+.car{
+    width: 23px;
+}
+.oddy{
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #2e2e2e;
+    font-weight: bold;
+}

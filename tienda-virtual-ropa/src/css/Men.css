@@ -1,0 +1,34 @@
+.men-page{
+    display: flex;
+}
+.img-men{
+    width: 350px;
+}
+.container-men{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+}
+.card-men{
+    margin: 15px 50px;
+}
+.title-men{
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+.precio-men{
+    color: #8C8C8C;
+    padding-top: -50px;
+}
+.card-bottom-men{
+    margin-top: -20px;
+}
+.title-page-men{
+    color: #8C8C8C;
+}
+.p-notfound{
+    color: #8C8C8C;
+    font-size: 25px;
+}
