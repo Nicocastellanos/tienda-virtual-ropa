@@ -15,6 +15,7 @@
 .button-icon{
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .options{
     display: flex;
@@ -28,4 +29,5 @@
 }
 .input-filter{
     background-color: transparent;
+    cursor: pointer;
 }

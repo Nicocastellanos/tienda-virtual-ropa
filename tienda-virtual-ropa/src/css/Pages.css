@@ -31,4 +31,7 @@
 .p-notfound{
     color: #8C8C8C;
     font-size: 25px;
+    text-align: center;
+    margin-left: 400px;
+    width: 600px;
 }

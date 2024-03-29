@@ -19,17 +19,17 @@ export default function Footer() {
         <div className='who'>
             <h3 className='title-footer'>Quienes Somos</h3>
             <ul>
-                <Link className='li-footer'><li>Cultura</li></Link>
-                <Link className='li-footer'><li >Trabaja aqui</li></Link>
-                <Link className='li-footer'><li >Que buscamos</li></Link>
+                <Link className='li-footer'><li className='li-contact'>Cultura</li></Link>
+                <Link className='li-footer'><li className='li-contact'>Trabaja aqui</li></Link>
+                <Link className='li-footer'><li className='li-contact'>Que buscamos</li></Link>
             </ul>
         </div>
         <div className='help'>
             <h3 className='title-footer'>Ayuda</h3>
             <ul>
-                <Link className='li-footer'><li >Envios</li></Link>
-                <Link className='li-footer'><li >Preguntas frecuentes</li></Link>
-                <Link className='li-footer'><li >Devoluciones y garantias</li></Link>
+                <Link className='li-footer'><li className='li-contact'>Envios</li></Link>
+                <Link className='li-footer'><li className='li-contact'>Preguntas frecuentes</li></Link>
+                <Link className='li-footer'><li className='li-contact'>Devoluciones y garantias</li></Link>
             </ul>
         </div>
         <div className='follow'>

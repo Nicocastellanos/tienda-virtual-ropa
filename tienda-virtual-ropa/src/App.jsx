@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import './css/App.css'
 import Footer from './components/Footer'
 import Men from './pages/Men'
+import Women from './pages/Women'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/hombre' element={<Men/>}/>
+            <Route path='/mujer' element={<Women/>}/>
           </Routes>
       <Footer/>
      </BrowserRouter>

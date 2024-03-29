@@ -1,36 +1,36 @@
 import React, { useEffect, useState } from 'react'
-import Filter from '../components/Filter';
-import '../css/Pages.css';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import '../css/Pages.css'
+import Filter from '../components/Filter'
 
-// Importacion imagenes
-import Gorra from '../assets/images/men/gorra-kaki.png'
-import Camiseta from '../assets/images/men/camiseta-negra.png'
-import ShortK from '../assets/images/men/short-kaki.png'
-import Pantalon from '../assets/images/men/pantalon-negro.png'
-import CamisetaK from '../assets/images/men/camiseta-kaki.png'
-import CamisetaK2 from '../assets/images/men/camiseta-kaki2.png'
-import ShortC from '../assets/images/men/short-cafe.png'
-import Llavero from '../assets/images/otros/llavero.png'
-import Gorra2 from '../assets/images/otros/gorra1.png'
+//importacion de imagenes
+import Gorra from '../assets/images/woman/gorra-morada.png'
+import Vestido from '../assets/images/woman/vestido-mujer.png'
+import Vestido2 from '../assets/images/woman/vestido2-mujer.png'
+import Pantalon from '../assets/images/woman/pantalon-mujer.png'
+import Chaqueta from '../assets/images/woman/chaqueta-mujer.png'
+import Pantalon2 from '../assets/images/woman/pantalon2-mujer.png'
+import Jean from '../assets/images/woman/jean-mujer.png'
+import Vestido3 from '../assets/images/woman/vestido3-mujer.png'
+import Camiseta from '../assets/images/woman/camiseta2-mujer.png'
 
-export default function Men() {
+export default function Women() {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [allProducts] = useState([
-        { src: Gorra, title: "Gorra Kaki", precio: "$30.000", color: "Kaki", talla: "M", categoria: "Gorras" },
-        { src: Camiseta, title: "Camiseta Negra", precio: "$50.000", color: "Negro", talla: "M", categoria: "Camisetas" },
-        { src: ShortK, title: "Pantaloneta Kaki", precio: "$100.000", color: ["Negro", "Blanco"], talla: "L", categoria: "Shorts" },
-        { src: Pantalon, title: "Pantalon Negro", precio: "$150.000", color: "Negro", talla: ["XL","S"], categoria: "Pantalones" },
-        { src: CamisetaK, title: "Camiseta Kaki", precio: "$100.000", color: "Kaki", talla: ["S", "M"], categoria: "Camisetas" },
-        { src: CamisetaK2, title: "Camiseta Kaki", precio: "$100.000", color: ["Kaki","Blanco"], talla:[ "M","L"], categoria: "Camisetas" },
-        { src: ShortC, title: "Pantaloneta Cafe", precio: "$100.000", color: "Cafe", talla: "L", categoria: "Shorts" },
-        { src: Llavero, title: "Llavero", precio: "$10.000", color: "Negro", talla: "S", categoria: "Llaveros" },
-        { src: Gorra2, title: "Gorra", precio: "$30.000", color: ["Kaki", "Negro"], talla: "M", categoria: "Gorras" }
+        { src: Gorra, title: "Gorra Morada", precio: "$30.000", color: "Morado", talla: "M", categoria: "Gorras" },
+        { src: Vestido, title: "Vestido Kaki", precio: "$150.000", color: "Kaki", talla: "M", categoria: "Vestidos" },
+        { src: Vestido2, title: "Vestido Blanco", precio: "$180.000", color: "Blanco", talla: "L", categoria: "Vestidos" },
+        { src: Pantalon, title: "Pantalon Blanco", precio: "$150.000", color: "Blanco", talla: ["M","S"], categoria: "Pantalones" },
+        { src: Chaqueta, title: "Chaqueta Rosada", precio: "$200.000", color: "Rosado", talla: ["S", "M"], categoria: "Chaquetas" },
+        { src: Pantalon2, title: "Pantalon Kaki", precio: "$120.000", color: ["Kaki","Blanco"], talla:[ "M","L"], categoria: "Pantalones" },
+        { src: Jean, title: "Jean", precio: "$180.000", color: "blanco", talla: ["M", "S", "L"], categoria: "Jeans" },
+        { src: Vestido3, title: "Vestido Negro", precio: "$180.000", color: "Negro", talla: "S", categoria: "Vestidos" },
+        { src: Camiseta, title: "Camiseta Blanca", precio: "$90.000", color: "Blanco", talla: ["S","M"], categoria: "Camisetas" }
     ]);
 
-    const categories = ["Camisetas", "Shorts", "Pantalones", "Buzos", "Gorras", "Llaveros", "Jeans"];
-    const colors = ["Azul", "Cafe", "Negro", "Blanco", "Kaki"];
-    const sizes = ["S", "M", "L", "XL"];
+    const categories = ["Camisetas", "Vestidos", "Pantalones", "Gorras", "Chaquetas", "Jeans"];
+    const colors = ["Rosado", "Morado", "Negro", "Blanco", "Kaki"];
+    const sizes = ["S", "M", "L"];
     const [appliedFilters, setAppliedFilters] = useState({ category: "", color: "", size: "" });
 
     const handleFilterChange = (name, value) => {
